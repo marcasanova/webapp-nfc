@@ -30,8 +30,6 @@
 
 ## Capturas
 
-Deja estos cuatro PNG en [`docs/screenshots/`](docs/screenshots/README.md) con **estos nombres**. En cuanto los subas, el README los muestra:
-
 | `/app` — álbumes | Álbum |
 | --- | --- |
 | ![Álbumes](docs/screenshots/01-home.png) | ![Álbum](docs/screenshots/02-album.png) |
@@ -39,6 +37,18 @@ Deja estos cuatro PNG en [`docs/screenshots/`](docs/screenshots/README.md) con *
 | Lightbox | Crear álbum |
 | --- | --- |
 | ![Lightbox](docs/screenshots/03-lightbox.png) | ![Crear álbum](docs/screenshots/04-create-album.png) |
+
+> Capturas desktop. Si el README se siente pesado, puedes sustituirlas por PNG más ligeros (~390 px de ancho). Ver [`docs/screenshots/README.md`](docs/screenshots/README.md).
+
+## En vídeo
+
+Dos vídeos donde cuento el proyecto. GitHub no permite embeds: toca la miniatura para abrir TikTok o Instagram.
+
+| TikTok | Instagram |
+| --- | --- |
+| [![Album NFC en TikTok](docs/videos/tiktok-thumb.jpg)](https://www.tiktok.com/@marc_casanova/video/7675024218152520982) | [![Album NFC en Instagram](docs/videos/instagram-thumb.jpg)](https://www.instagram.com/reel/DcHFC1GuVfd/) |
+
+URLs en [`lib/videos.ts`](lib/videos.ts). Miniaturas README: [`docs/videos/`](docs/videos/README.md).
 
 ## Qué hace
 
@@ -104,11 +114,12 @@ app/                 App Router (páginas y Server Actions)
 components/          UI (galería, lightbox, crear álbum, …)
 lib/                 Datos, slug, países, clientes Supabase
 supabase/migrations/ SQL reproducible para forks
-docs/                Logo, capturas y checklist de GitHub
+docs/                Logo, capturas, vídeos y checklist de GitHub
 contexto/            Reglas y skills para agentes de código
 AGENTS.md            Instrucciones para asistentes de IA
 ```
 
+Vídeos del proyecto: [`lib/videos.ts`](lib/videos.ts). Miniaturas README: [`docs/videos/`](docs/videos/README.md).
 ## Aviso de seguridad (importante)
 
 Este MVP es **intencionalmente abierto**: cualquiera puede crear y borrar álbumes y fotos. Las políticas RLS y de Storage permiten acceso anónimo completo.
