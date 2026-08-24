@@ -1,26 +1,30 @@
 import type { Metadata } from "next";
+import { LandingCta } from "@/components/landing-cta";
+import { LandingFaq } from "@/components/landing-faq";
+import { LandingFooter } from "@/components/landing-footer";
 import { LandingHero } from "@/components/landing-hero";
 import { LandingHow } from "@/components/landing-how";
+import { LandingMoments } from "@/components/landing-moments";
+import { LandingProblem } from "@/components/landing-problem";
+import { LandingProduct } from "@/components/landing-product";
 
 export const metadata: Metadata = {
   title: "Album NFC — Tus recuerdos, a un toque",
   description:
-    "Album NFC convierte cada pegatina NFC en un álbum de fotos abierto. Abre el mapa de tus mejores momentos.",
+    "Acerca el móvil a un imán de nevera y salen las fotos de ese viaje. Sin cuenta ni apps que instalar.",
 };
 
 export default function LandingPage() {
   return (
     <>
       <LandingHero />
+      <LandingProblem />
+      <LandingProduct />
       <LandingHow />
-      <footer className="border-t border-borde px-4 py-8 sm:px-8">
-        <p className="mx-auto max-w-3xl text-center text-xs text-muted-foreground">
-          <span className="font-semibold text-piedra">Album</span>
-          <span className="font-semibold text-tierra"> NFC</span>
-          {" · "}
-          Tus recuerdos, a un toque.
-        </p>
-      </footer>
+      <LandingMoments />
+      <LandingFaq />
+      <LandingCta />
+      <LandingFooter />
     </>
   );
 }

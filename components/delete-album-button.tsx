@@ -26,8 +26,8 @@ export function DeleteAlbumButton({
 
       <ConfirmDialog
         open={open}
-        title="Borrar álbum"
-        description="Se eliminarán el álbum y todas sus fotos de forma permanente."
+        title="¿Borrar este álbum?"
+        description="Se borran el álbum y todas sus fotos. Esto no se puede deshacer."
         pending={isPending}
         onConfirm={() =>
           startTransition(async () => {

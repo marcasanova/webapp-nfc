@@ -11,20 +11,22 @@
 
 ## Tono y lenguaje
 
-Cálido, inspirador, directo, sin jerga técnica.
+Cálido, cercano, como escrito a mano — sin jerga de producto ni tono de ficha técnica.
 
-- Evitar: "NFC tag", "upload", "data", "media", "postal".
-- Usar: "pegatina", "recuerdo", "fotos", "guardar foto", "álbum".
+- Evitar: "NFC tag", "upload", "data", "media", "acceso", "convierte cada…".
+- Usar: "pegatina", "recuerdo", "fotos", "guardar foto", "álbum", "acercar el móvil".
 
 Microtexto de referencia:
 
 - Encabezado home: wordmark **Album NFC** + eslogan *"Tus recuerdos, a un toque."*
-- Subtítulo home: *"Abre el mapa de tus mejores momentos."*
+- Subtítulo home: *"Aquí tienes los álbumes. Cada uno es un sitio que ha pasado por la nevera, con sus fotos."*
+- CTA landing: *"Ver los álbumes"*.
 - CTA crear: *"+ Nuevo álbum"*.
 - CTA subir foto (FAB): *"+ Añadir foto"*.
 - Estado guardando: *"Guardando…"*.
-- Galería vacía: *"Todavía no hay fotos en este álbum. Toca el botón para guardar la primera."*
-- Home vacía: *"Todavía no hay álbumes."*
+- Galería vacía: *"Este álbum está vacío. Toca el botón de abajo y sube la primera foto."*
+- Home vacía: *"Todavía no hay ningún álbum."*
+
 
 ## Paleta de colores
 
@@ -58,7 +60,7 @@ Variables CSS en `app/globals.css`, mapeadas en `@theme inline` de Tailwind 4. `
 ## Composición
 
 - Home herramienta (`/app`): `BrandLockup` (texto) como señal hero, grid de álbumes, un único CTA "+ Nuevo álbum". Sin stats, sin filtros, sin promos.
-- Landing (`/`): wordmark hero + un eslogan + una frase + un CTA a `/app`; debajo, un bloque “Cómo funciona” en tres pasos. Sin cards de features ni formularios.
+- Landing (`/`): hero two-column (marca + visual, sin navbar) → problema editorial → producto con mock de álbumes → cómo funciona (3 pasos con foto) → tres momentos → FAQ → CTA final → footer con RRSS. Un solo CTA: “Abrir los álbumes”. Sin cards de features genéricas, sin formularios, sin precios ni testimonios inventados.
 - Álbum (`/album/[slug]`): wordmark pequeño + volver, cabecera con emoji + país, nombre, grid de fotos, FAB "+ Añadir foto". Primera visita: overlay de bienvenida antes de la galería.
 - Sin cards decorativas: la card de álbum es el contenedor de interacción.
 - Excepción a "sin emojis": el emoji es un dato del álbum (elegido al crearlo), no decoración de UI.
@@ -75,6 +77,7 @@ Usar `motion` con intención:
 5. Hover de card: zoom + lift + borde Tierra.
 6. Confirmación breve al setear portada.
 7. Bienvenida primera visita al álbum (`AlbumWelcome`): título + emoji + partículas en colores de marca (tierra/bosque/arena/piedra); una vez por slug en `localStorage`; skip al tocar; respetar `prefers-reduced-motion`.
+8. Landing (`/`): fade/slide del hero (stagger corto) y reveal al entrar en vista en el resto; sin parallax. Respetar `prefers-reduced-motion`.
 
 Evitar glow, sombras multicapa y pills decorativos.
 

@@ -21,22 +21,20 @@
 </p>
 
 <p align="center">
-  <a href="https://TU-DEMO.vercel.app"><strong>Demo en vivo</strong></a>
+  <a href="https://album-nfc.vercel.app/"><strong>Demo en vivo</strong></a>
   ·
   <a href="#inicio-rápido">Inicio rápido</a>
   ·
   <a href="SECURITY.md">Aviso de seguridad</a>
 </p>
 
-> **Demo:** sustituye `https://TU-DEMO.vercel.app` por la URL real de tu despliegue cuando la tengas (y este aviso).
-
 ## Capturas
 
-> Añade las imágenes en [`docs/screenshots/`](docs/screenshots/README.md). Cuando existan, se verán aquí:
+Deja estos cuatro PNG en [`docs/screenshots/`](docs/screenshots/README.md) con **estos nombres**. En cuanto los subas, el README los muestra:
 
-| Home | Álbum |
+| `/app` — álbumes | Álbum |
 | --- | --- |
-| ![Home](docs/screenshots/01-home.png) | ![Álbum](docs/screenshots/02-album.png) |
+| ![Álbumes](docs/screenshots/01-home.png) | ![Álbum](docs/screenshots/02-album.png) |
 
 | Lightbox | Crear álbum |
 | --- | --- |
@@ -44,14 +42,15 @@
 
 ## Qué hace
 
-1. **Home** (`/`): lista todos los álbumes (uno por destino / país), con portada o emoji.
-2. **Álbum** (`/album/[slug]`): galería de fotos.
-3. **Crear álbum**: emoji (lista curada) + nombre + país — los tres obligatorios.
-4. **Subir fotos**: desde galería o cámara (`image/*`, máx. ~10 MB).
-5. **Portada**: cualquier foto puede marcarse como portada desde el lightbox.
-6. **Borrar**: cualquiera puede borrar álbumes o fotos (sin auth).
+1. **Landing** (`/`): presentación de Album NFC. Al escanear la pegatina se abre esta página.
+2. **Álbumes** (`/app`): lista todos los álbumes (uno por destino / país), con portada o emoji.
+3. **Álbum** (`/album/[slug]`): galería de fotos.
+4. **Crear álbum**: emoji + nombre + país — los tres obligatorios.
+5. **Subir fotos**: desde galería o cámara (`image/*`, máx. ~10 MB).
+6. **Portada**: cualquier foto puede marcarse como portada desde el lightbox.
+7. **Borrar**: cualquiera puede borrar álbumes o fotos (sin auth).
 
-Un NFC apunta a la **home** (todos los álbumes), no a un álbum concreto.
+La pegatina NFC apunta a la **landing** (`/`) o a `/app`, no a un álbum concreto.
 
 ## Stack
 

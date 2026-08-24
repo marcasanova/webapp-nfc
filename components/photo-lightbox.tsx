@@ -222,7 +222,7 @@ export function PhotoLightbox({
               ? "Es la portada"
               : isSettingCover
                 ? "Guardando…"
-                : "Usar como portada"}
+                : "Usar de portada"}
           </button>
           <button
             type="button"
@@ -238,7 +238,7 @@ export function PhotoLightbox({
             animate={{ opacity: 1, y: 0 }}
             className="mt-2 text-center text-sm text-blanco/75"
           >
-            Portada actualizada
+            Listo, ya es la portada
           </motion.p>
         ) : null}
       </div>

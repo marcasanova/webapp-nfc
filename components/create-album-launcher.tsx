@@ -82,7 +82,7 @@ export function CreateAlbumLauncher() {
                       Nuevo álbum
                     </h2>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Emoji, nombre y país. Los tres son obligatorios.
+                      Un emoji, un nombre y el país. Los tres.
                     </p>
                   </div>
                   <button
@@ -109,7 +109,7 @@ export function CreateAlbumLauncher() {
                       <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
                         Emoji del álbum
                       </span>
-                      <div className="grid grid-cols-6 gap-1.5 rounded-2xl border border-surface-border bg-arena p-2 sm:grid-cols-8 sm:gap-2 sm:p-2.5">
+                      <div className="grid grid-cols-5 gap-1.5 rounded-2xl border border-surface-border bg-arena p-2 sm:grid-cols-8 sm:gap-2 sm:p-2.5">
                         {ALBUM_EMOJIS.map((option) => (
                           <button
                             key={option}

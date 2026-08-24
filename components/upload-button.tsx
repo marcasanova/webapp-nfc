@@ -38,7 +38,7 @@ export function UploadButton({ albumId, slug }: UploadButtonProps) {
 
     if (validFiles.length === 0) {
       setError(
-        "Solo podemos guardar imágenes (JPEG, PNG, WebP, HEIC, GIF) de hasta 10 MB.",
+        "Solo valen fotos (JPEG, PNG, WebP, HEIC o GIF) de hasta 10 MB.",
       );
       if (inputRef.current) inputRef.current.value = "";
       return;
@@ -61,10 +61,10 @@ export function UploadButton({ albumId, slug }: UploadButtonProps) {
         try {
           await registerMedia(albumId, slug, path, file.type);
         } catch {
-          setError("Alguna foto no se pudo guardar. Inténtalo de nuevo.");
+          setError("No se ha podido guardar alguna foto. Prueba otra vez.");
         }
       } else {
-        setError("Alguna foto no se pudo guardar. Inténtalo de nuevo.");
+        setError("No se ha podido guardar alguna foto. Prueba otra vez.");
       }
 
       setProgress((prev) => (prev ? { ...prev, done: prev.done + 1 } : prev));

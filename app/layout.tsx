@@ -9,9 +9,12 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Album NFC",
+  title: {
+    default: "Album NFC",
+    template: "%s · Album NFC",
+  },
   description:
-    "Tus recuerdos, a un toque. Album NFC convierte cada pegatina NFC en un álbum de fotos abierto para todos.",
+    "Tus recuerdos, a un toque. Acerca el móvil a un imán de nevera y vuelven las fotos de ese viaje.",
 };
 
 export const viewport: Viewport = {

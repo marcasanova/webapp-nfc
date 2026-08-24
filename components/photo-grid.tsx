@@ -66,8 +66,8 @@ export function PhotoGrid({ media, albumId, slug, coverPath }: PhotoGridProps) {
   if (media.length === 0) {
     return (
       <EmptyState
-        title="Todavía no hay fotos en este álbum"
-        description="Toca el botón para guardar la primera, con la cámara o la galería del móvil."
+        title="Este álbum está vacío"
+        description="Toca el botón de abajo y sube la primera foto, desde la cámara o la galería."
       />
     );
   }
@@ -134,8 +134,8 @@ export function PhotoGrid({ media, albumId, slug, coverPath }: PhotoGridProps) {
 
       <ConfirmDialog
         open={confirming !== null}
-        title="Borrar foto"
-        description="Esta acción no se puede deshacer. La foto se eliminará para siempre del álbum."
+        title="¿Borrar esta foto?"
+        description="Se quita del álbum y no se puede recuperar."
         pending={isPending}
         onConfirm={() => confirming && handleDelete(confirming)}
         onCancel={() => setConfirmingId(null)}

@@ -5,7 +5,7 @@ Hazlo en [Settings del repo](https://github.com/marcasanova/WebApp-NFCs/settings
 ## About
 
 - **Description:** `WebApp de álbumes de fotos abiertos al escanear pegatinas NFC (Next.js + Supabase).`
-- **Website / Homepage:** URL de tu demo en Vercel (cuando la tengas).
+- **Website / Homepage:** `https://album-nfc.vercel.app/`
 - **Topics:** `nextjs`, `supabase`, `nfc`, `typescript`, `tailwindcss`, `photo-album`
 
 ## Social preview

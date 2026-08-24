@@ -1,12 +1,12 @@
 # Capturas para el README
 
-Coloca aquí exactamente estos archivos (PNG o WebP, preferible viewport móvil ~390 px de ancho):
+Deja aquí **exactamente** estos cuatro archivos (PNG, viewport móvil ~390 px de ancho). No cambies los nombres: el README ya los apunta.
 
-| Archivo | Contenido |
+| Archivo | Qué fotografiar |
 | --- | --- |
-| `01-home.png` | Home con el grid de álbumes |
+| `01-home.png` | `/app` con el grid de álbumes |
 | `02-album.png` | Galería de un álbum (`/album/[slug]`) |
-| `03-lightbox.png` | Lightbox de una foto (idealmente con “Usar como portada”) |
-| `04-create-album.png` | Flujo / sheet de crear álbum (emoji + nombre + país) |
+| `03-lightbox.png` | Lightbox de una foto (si puedes, con “Usar de portada”) |
+| `04-create-album.png` | Sheet de crear álbum (emoji + nombre + país) |
 
-Cuando existan, el README principal ya las referencia. No subas capturas con datos personales sensibles.
+Al commitearlos, aparecen solos en el README. No subas fotos personales sensibles.
