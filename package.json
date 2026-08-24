@@ -1,7 +1,8 @@
 {
-  "name": "webappnfc",
+  "name": "album-nfc",
   "version": "0.1.0",
   "private": true,
+  "description": "WebApp de álbumes de fotos abiertos al escanear pegatinas NFC (Next.js + Supabase).",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

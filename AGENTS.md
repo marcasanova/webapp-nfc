@@ -16,7 +16,7 @@ Instrucciones para agentes de código. Complementa el README humano. Formato lib
 
 **Album NFC**: WebApp abierta al escanear una pegatina NFC en un imán de nevera. Actúa como álbum compartido online. En el código y el schema el concepto es `album`/`albums`. Marca tipográfica: “Album” (piedra) + “NFC” (tierra).
 
-- La home lista **todos los álbumes** (uno por país / destino).
+- La landing (`/`) presenta la marca; la herramienta lista **todos los álbumes** en `/app` (uno por país / destino).
 - Dentro de cada álbum: galería dinámica de **fotos** (no hay vídeos en el MVP).
 - Crear álbum requiere **emoji** (selector curado) **+ nombre libre + país** (select), los tres obligatorios.
 - Cualquiera puede crear álbumes, añadir y borrar fotos. **Sin login ni multi-usuario**.

@@ -68,7 +68,7 @@ export async function createAlbum(
     return { error: "No se pudo crear el álbum. Inténtalo de nuevo." };
   }
 
-  revalidatePath("/");
+  revalidatePath("/app");
   redirect(`/album/${insertedSlug}`);
 }
 
@@ -88,7 +88,7 @@ export async function deleteAlbum(albumId: string, slug: string) {
 
   await supabase.from("albums").delete().eq("id", albumId);
 
-  revalidatePath("/");
+  revalidatePath("/app");
   revalidatePath(`/album/${slug}`);
-  redirect("/");
+  redirect("/app");
 }

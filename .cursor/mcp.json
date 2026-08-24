@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "supabase": {
-      "url": "https://mcp.supabase.com/mcp?project_ref=fptwmjhdumiclaupugus&features=database,storage,docs"
+      "url": "https://mcp.supabase.com/mcp?project_ref=YOUR_PROJECT_REF&features=database,storage,docs"
     }
   }
 }

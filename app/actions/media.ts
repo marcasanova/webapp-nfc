@@ -35,7 +35,7 @@ export async function registerMedia(
       .eq("id", albumId);
   }
 
-  revalidatePath("/");
+  revalidatePath("/app");
   revalidatePath(`/album/${slug}`);
 }
 
@@ -55,7 +55,7 @@ export async function setAlbumCover(
     throw new Error("No se pudo actualizar la portada.");
   }
 
-  revalidatePath("/");
+  revalidatePath("/app");
   revalidatePath(`/album/${slug}`);
 }
 
@@ -91,6 +91,6 @@ export async function deleteMedia(
       .eq("id", albumId);
   }
 
-  revalidatePath("/");
+  revalidatePath("/app");
   revalidatePath(`/album/${slug}`);
 }
