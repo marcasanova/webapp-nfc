@@ -18,13 +18,13 @@ export const PROJECT_VIDEOS: readonly ProjectVideo[] = [
     label: "TikTok",
     href: "https://www.tiktok.com/@marc_casanova/video/7675024218152520982",
     thumb: "/videos/tiktok-thumb.jpg",
-    viewsLabel: "+90k visualizaciones",
+    viewsLabel: "+170k visualizaciones",
   },
   {
     id: "instagram",
     label: "Instagram",
     href: "https://www.instagram.com/reel/DcHFC1GuVfd/",
     thumb: "/videos/instagram-thumb.jpg",
-    viewsLabel: "+20k visualizaciones",
+    viewsLabel: "+60k visualizaciones",
   },
 ] as const;
