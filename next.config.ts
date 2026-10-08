@@ -24,6 +24,15 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: supabaseRemotePatterns(),
   },
+  async redirects() {
+    return [
+      {
+        source: "/app",
+        destination: "/albums",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 

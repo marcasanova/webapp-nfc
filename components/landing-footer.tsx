@@ -45,7 +45,7 @@ export function LandingFooter() {
         </nav>
 
         <Link
-          href="/app"
+          href="/albums"
           className="inline-flex h-11 min-h-[44px] w-full items-center justify-center rounded-full border border-borde bg-blanco px-5 text-sm font-medium text-tierra transition-transform duration-150 hover:border-tierra/40 active:scale-95 sm:w-auto sm:border-0 sm:bg-transparent sm:px-0 sm:hover:border-0"
         >
           Ver los álbumes

@@ -4,9 +4,12 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { BrandLockup } from "@/components/brand-lockup";
 import { LandingCtaLink } from "@/components/landing-cta-link";
+import { SOCIALS } from "@/lib/socials";
 import { PROJECT_VIDEOS, type ProjectVideo } from "@/lib/videos";
 
 function HeroVideoCard({ video }: { video: ProjectVideo }) {
+  const social = SOCIALS.find((item) => item.id === video.id);
+
   return (
     <a
       href={video.href}
@@ -38,9 +41,24 @@ function HeroVideoCard({ video }: { video: ProjectVideo }) {
           </svg>
         </span>
       </span>
-      <span className="absolute left-2 top-2 rounded-full border border-blanco/20 bg-piedra/55 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-blanco backdrop-blur-sm sm:left-3 sm:top-3 sm:px-2.5 sm:py-1 sm:text-[11px]">
-        {video.label}
-      </span>
+      {social ? (
+        <span className="absolute left-2 top-2 flex h-8 w-8 items-center justify-center rounded-full border border-blanco/20 bg-piedra/55 text-blanco backdrop-blur-sm sm:left-3 sm:top-3 sm:h-9 sm:w-9">
+          <span
+            aria-hidden
+            className="block h-4 w-4 bg-current"
+            style={{
+              maskImage: `url(${social.icon})`,
+              WebkitMaskImage: `url(${social.icon})`,
+              maskSize: "contain",
+              WebkitMaskSize: "contain",
+              maskRepeat: "no-repeat",
+              WebkitMaskRepeat: "no-repeat",
+              maskPosition: "center",
+              WebkitMaskPosition: "center",
+            }}
+          />
+        </span>
+      ) : null}
       <span className="absolute inset-x-2 bottom-2 rounded-full border border-blanco/15 bg-piedra/60 px-2 py-1 text-center text-[10px] font-medium text-blanco backdrop-blur-sm sm:inset-x-3 sm:bottom-3 sm:px-2.5 sm:py-1.5 sm:text-xs">
         {video.viewsLabel}
       </span>

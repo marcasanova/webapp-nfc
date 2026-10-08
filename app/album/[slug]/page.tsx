@@ -30,14 +30,14 @@ export default async function AlbumPage(
         <div className="flex flex-col gap-4 sm:gap-5">
           <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
             <Link
-              href="/app"
+              href="/albums"
               className="inline-flex min-h-[44px] items-center gap-1.5 rounded-full border border-surface-border bg-blanco px-4 text-sm font-medium text-foreground shadow-sm shadow-piedra/5 transition-transform duration-150 hover:border-tierra/40 active:scale-95"
             >
               <span aria-hidden>←</span>
               <span className="max-[360px]:hidden">Todos los álbumes</span>
               <span className="min-[361px]:hidden">Álbumes</span>
             </Link>
-            <BrandLockup size="sm" href="/app" className="hidden sm:inline-flex" />
+            <BrandLockup size="sm" href="/albums" className="hidden sm:inline-flex" />
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">

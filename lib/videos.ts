@@ -1,7 +1,6 @@
 /**
  * Enlaces a los vídeos del proyecto (TikTok + Instagram).
- * Solo URLs: al tocar se abre la plataforma. Miniaturas en `public/videos/`
- * (y `docs/videos/` para el README de GitHub).
+ * Solo URLs: al tocar se abre la plataforma. Miniaturas en `public/videos/`.
  */
 export type ProjectVideo = {
   id: "tiktok" | "instagram";

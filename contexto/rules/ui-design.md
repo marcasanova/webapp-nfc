@@ -59,7 +59,7 @@ Variables CSS en `app/globals.css`, mapeadas en `@theme inline` de Tailwind 4. `
 
 ## Composición
 
-- Home herramienta (`/app`): `BrandLockup` (texto) como señal hero, grid de álbumes, un único CTA "+ Nuevo álbum". Sin stats, sin filtros, sin promos.
+- Home herramienta (`/albums`): `BrandLockup` (texto) como señal hero, grid de álbumes, un único CTA "+ Nuevo álbum". Sin stats, sin filtros, sin promos.
 - Landing (`/`): hero two-column (marca + visual, sin navbar) → problema editorial → producto con mock de álbumes → cómo funciona (3 pasos con foto) → tres momentos → FAQ → CTA final → footer con RRSS. Un solo CTA: “Abrir los álbumes”. Sin cards de features genéricas, sin formularios, sin precios ni testimonios inventados.
 - Álbum (`/album/[slug]`): wordmark pequeño + volver, cabecera con emoji + país, nombre, grid de fotos, FAB "+ Añadir foto". Primera visita: overlay de bienvenida antes de la galería.
 - Sin cards decorativas: la card de álbum es el contenedor de interacción.
